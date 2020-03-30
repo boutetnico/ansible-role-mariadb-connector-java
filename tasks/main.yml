@@ -1,0 +1,13 @@
+---
+- name: Download MariaDB Connector Java
+  get_url:
+    dest: "{{ connector_install_path }}/mariadb-java-client-{{ connector_version }}.jar"
+    group: "{{ connector_group }}"
+    mode: "{{ connector_mode }}"
+    owner: "{{ connector_owner }}"
+    url: https://downloads.mariadb.com/Connectors/java/connector-java-{{ connector_version }}/mariadb-java-client-{{ connector_version }}.jar
+
+- name: Ensure dependencies are installed
+  apt:
+    name: "{{ connector_dependencies }}"
+    state: present

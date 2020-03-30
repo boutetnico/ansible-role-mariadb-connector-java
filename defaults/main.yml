@@ -1,0 +1,7 @@
+---
+connector_dependencies: []
+connector_version: 2.6.0
+connector_install_path: /tmp
+connector_owner: root
+connector_group: root
+connector_mode: 0644

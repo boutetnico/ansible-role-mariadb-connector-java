@@ -1,0 +1,21 @@
+---
+galaxy_info:
+  author: Nicolas Boutet
+  description: Install MariaDB Connector/J
+  license: MIT
+  min_ansible_version: 2.6
+  platforms:
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+    - name: Debian
+      versions:
+        - stretch
+        - buster
+  galaxy_tags:
+    - connector
+    - java
+    - jdbc
+    - mariadb
+dependencies: []
