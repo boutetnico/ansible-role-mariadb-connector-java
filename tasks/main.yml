@@ -11,3 +11,4 @@
   apt:
     name: "{{ connector_dependencies }}"
     state: present
+    update_cache: true
