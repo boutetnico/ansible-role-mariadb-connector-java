@@ -1,5 +1,5 @@
 [![tests](https://github.com/boutetnico/ansible-role-mariadb-connector-java/workflows/Test%20ansible%20role/badge.svg)](https://github.com/boutetnico/ansible-role-mariadb-connector-java/actions?query=workflow%3A%22Test+ansible+role%22)
-[![Ansible Galaxy](https://img.shields.io/badge/galaxy-boutetnico.mariadb-connector-java-blue.svg)](https://galaxy.ansible.com/boutetnico/mariadb-connector-java)
+[![Ansible Galaxy](https://img.shields.io/badge/galaxy-boutetnico.mariadb_connector_java-blue.svg)](https://galaxy.ansible.com/boutetnico/mariadb_connector_java)
 
 ansible-role-mariadb-connector-java
 ===================================
