@@ -1,3 +1,6 @@
+[![tests](https://github.com/boutetnico/ansible-role-mariadb-connector-java/workflows/Test%20ansible%20role/badge.svg)](https://github.com/boutetnico/ansible-role-mariadb-connector-java/actions?query=workflow%3A%22Test+ansible+role%22)
+[![Ansible Galaxy](https://img.shields.io/badge/galaxy-boutetnico.mariadb-connector-java-blue.svg)](https://galaxy.ansible.com/boutetnico/mariadb-connector-java)
+
 ansible-role-mariadb-connector-java
 ===================================
 
@@ -6,7 +9,7 @@ This role installs [MariaDB Connector/J](https://mariadb.com/kb/en/about-mariadb
 Requirements
 ------------
 
-Ansible 2.6 or newer.
+Ansible 2.7 or newer.
 
 Supported Platforms
 -------------------
