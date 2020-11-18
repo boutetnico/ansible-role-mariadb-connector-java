@@ -28,7 +28,7 @@ jobs:
           python-version: "3.x"
 
       - name: Remove pre-installed ansible
-        run: apt-get remove --purge -y ansible
+        run: sudo apt-get remove --purge -y ansible
 
       - name: Install dependencies
         run: pip install -q ansible~=${{ matrix.ansible }} ansible-lint docker flake8 molecule molecule-docker pytest-testinfra
