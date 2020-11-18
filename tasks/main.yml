@@ -12,3 +12,4 @@
     name: "{{ connector_dependencies }}"
     state: present
     update_cache: true
+  when: connector_dependencies | length > 0
