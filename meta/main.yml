@@ -1,6 +1,7 @@
 ---
 galaxy_info:
-  role_name: mariadb-connector-java
+  role_name: mariadb_connector_java
+  namespace: boutetnico
   author: Nicolas Boutet
   description: Install MariaDB Connector/J.
   license: MIT
