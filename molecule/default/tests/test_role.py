@@ -9,7 +9,7 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 
 
 @pytest.mark.parametrize('file,user,group,mode', [
-  ('/tmp/mariadb-java-client-3.0.3.jar', 'root', 'root', 0o644),
+  ('/tmp/mariadb-java-client-3.0.4.jar', 'root', 'root', 0o644),
 ])
 def test_connector_is_installed(host, file, user, group, mode):
     connector = host.file(file)
