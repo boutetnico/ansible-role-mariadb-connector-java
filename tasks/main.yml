@@ -1,6 +1,6 @@
 ---
 - name: Download MariaDB Connector Java
-  get_url:
+  ansible.builtin.get_url:
     dest: "{{ connector_install_path }}/mariadb-java-client-{{ connector_version }}.jar"
     group: "{{ connector_group }}"
     mode: "{{ connector_mode }}"
@@ -8,7 +8,7 @@
     url: https://downloads.mariadb.com/Connectors/java/connector-java-{{ connector_version }}/mariadb-java-client-{{ connector_version }}.jar
 
 - name: Ensure dependencies are installed
-  apt:
+  ansible.builtin.apt:
     name: "{{ connector_dependencies }}"
     state: present
     update_cache: true
