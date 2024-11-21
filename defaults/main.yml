@@ -1,6 +1,6 @@
 ---
 connector_dependencies: []
-connector_version: 3.5.0
+connector_version: 3.5.1
 connector_install_path: /tmp
 connector_owner: root
 connector_group: root
