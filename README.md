@@ -25,7 +25,7 @@ Role Variables
 | Variable                     | Required | Default             | Choices   | Comments                                      |
 |------------------------------|----------|---------------------|-----------|-----------------------------------------------|
 | connector_dependencies       | yes      | `[]`                | list      |                                               |
-| connector_version            | yes      | `3.5.5`             | string    |                                               |
+| connector_version            | yes      | `3.5.6`             | string    |                                               |
 | connector_install_path       | yes      | `/tmp`              | string    |                                               |
 | connector_owner              | yes      | `root`              | string    |                                               |
 | connector_group              | yes      | `root`              | string    |                                               |
