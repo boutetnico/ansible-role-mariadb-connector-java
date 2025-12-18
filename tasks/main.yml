@@ -5,7 +5,7 @@
     group: "{{ connector_group }}"
     mode: "{{ connector_mode }}"
     owner: "{{ connector_owner }}"
-    url: https://downloads.mariadb.com/Connectors/java/connector-java-{{ connector_version }}/mariadb-java-client-{{ connector_version }}.jar
+    url: https://dlm.mariadb.com/4550269/Connectors/java/connector-java-{{ connector_version }}/mariadb-java-client-{{ connector_version }}.jar
 
 - name: Ensure dependencies are installed
   ansible.builtin.apt:
