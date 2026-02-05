@@ -14,3 +14,12 @@ def test_connector_is_installed(host, file, user, group, mode):
     assert connector.user == user
     assert connector.group == group
     assert connector.mode == mode
+
+
+def test_connector_jar_is_valid(host):
+    """Test that the JAR file is a valid Java archive."""
+    cmd = host.run(
+        "python3 -c \"import zipfile; print(zipfile.is_zipfile('/tmp/mariadb-java-client-3.5.7.jar'))\""
+    )
+    assert cmd.rc == 0
+    assert "True" in cmd.stdout
