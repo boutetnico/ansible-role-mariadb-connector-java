@@ -4,7 +4,7 @@ import pytest
 @pytest.mark.parametrize(
     "file,user,group,mode",
     [
-        ("/tmp/mariadb-java-client-3.5.7.jar", "root", "root", 0o644),
+        ("/tmp/mariadb-java-client-3.5.8.jar", "root", "root", 0o644),
     ],
 )
 def test_connector_is_installed(host, file, user, group, mode):
@@ -19,7 +19,7 @@ def test_connector_is_installed(host, file, user, group, mode):
 def test_connector_jar_is_valid(host):
     """Test that the JAR file is a valid Java archive."""
     cmd = host.run(
-        "python3 -c \"import zipfile; print(zipfile.is_zipfile('/tmp/mariadb-java-client-3.5.7.jar'))\""
+        "python3 -c \"import zipfile; print(zipfile.is_zipfile('/tmp/mariadb-java-client-3.5.8.jar'))\""
     )
     assert cmd.rc == 0
     assert "True" in cmd.stdout
